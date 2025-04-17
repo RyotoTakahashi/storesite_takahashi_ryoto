@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>ECサイト</title>
+	<meta name="description" content="練習用サイト">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="css/cart.css"><!--表示するとカートのボタンができる代わりに１回もモーダルが開けなくなるので非表示-->
+	<link rel="preload" as="image" href="img/Library_of_faborite.jpg">
+	<link rel="preload" as="image" href="img/Library_of_faborite2.jpg">
+	<link rel="preload" as="image" href="img/Library_of_faborite3.jpg">
+	<script src="js/jQuery.js"></script>
+	<script src="js/animatedModal.js"></script>
+	<script src="js/slick.js"></script>
+
+
+</head>
+<body>
+	<div id="mainvisual">
+	  <div class="slider">
+	    <div class="slick-img">
+	      <img src="img/Library_of_faborite.jpg" alt="トップページ">
+	    </div>
+	    <div class="slick-img">
+	      <img src="img/Library_of_faborite2.jpg" alt="トップページ">
+	    </div>
+	    <div class="slick-img">
+	      <img src="img/Library_of_faborite3.jpg" alt="トップページ">
+	    </div>
+	  </div>
+	</div>
+	<nav>
+		<ul class="center">
+			<li><a href="#top">トップ</a></li>
+			<li><a href="#marchants">商品一覧</a></li>
+			<li><a href="#contact">お問い合わせ</a></li>
+		</ul>
+		<ul class="right">
+			<li><a href="#">ログイン</a></li>
+			<li><a href="#">新規登録</a></li>
+		</ul>
+	</nav>
+	<section id="top">
+		<h2>当該サイトは練習用に制作したサイトです. </h2><!--これらの本をいずれ読みたいです-->
+	</section>
+	<section id="marchants">
+		<h3>商品一覧</h3>
+		<div class="page">
+			<ol>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">…</a></li>
+			</ol>
+		</div>
+		<div id="pulldown">
+			<select size="1" id="sort_select">
+				<option>おすすめ順</option>
+				<option>価格の安い順</option>
+				<option>価格の高い順</option>
+			</select>
+		</div>
+		<div id="booklist">
+			<div class="book">
+				<img src="img/ABC殺人事件.jpg">
+				<h4 class="bookname">ABC殺人事件</h4>
+				<p class="summery"></p><!--スペースが足りないため実装しない-->
+				<p class="writer">アガサ・クリスティ</p>
+				<p class="price">1000円</p>
+				<div>数量
+					<select class="amount">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+					</select>
+				</div>
+				<span><input type="button" class="buy" value="購入する"></span>
+				<span><input type="button" class="cart" value="カートに入れる"></span>
+			</div>
+			<div class="book">
+				<img src="img/変身.jpg">
+				<h4 class="bookname">変身</h4>
+				<p class="summery"></p><!--スペースが足りないため実装しない-->
+				<p class="writer">フランツ・カフカ</p>
+				<p class="price">550円</p>
+				<div>数量
+					<select class="amount">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+					</select>
+				</div>
+				<span><input type="button" class="buy" value="購入する"></span>
+				<span><input type="button" class="cart" value="カートに入れる"></span>
+			</div>
+			<div class="book">
+				<img src="img/坊ちゃん.jpg">
+				<h4 class="bookname">坊ちゃん</h4>
+				<p class="summery"></p><!--スペースが足りないため実装しない-->
+				<p class="writer">夏目漱石</p>
+				<p class="price">400円</p>
+				<div>数量
+					<select class="amount">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+					</select>
+				</div>
+				<span><input type="button" class="buy" value="購入する"></span>
+				<span><input type="button" class="cart" value="カートに入れる"></span>
+			</div>
+			<div class="book">
+				<img src="img/たった一つの冴えたやり方.jpg">
+				<h4 class="bookname">たった一つの冴えたやり方</h4>
+				<p class="summery"></p><!--スペースが足りないため実装しない-->
+				<p class="writer">ジェイムズ・ティプトリーJr</p>
+				<p class="price">1100円</p>
+				<div>数量
+					<select class="amount">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+					</select>
+				</div>
+				<span><input type="button" class="buy" value="購入する"></span>
+				<span><input type="button" class="cart" value="カートに入れる"></span>
+			</div>
+			<div class="book">
+				<img src="img/月は無慈悲な夜の女王.jfif">
+				<h4 class="bookname">月は無慈悲な夜の女王</h4>
+				<p class="summery"></p><!--スペースが足りないため実装しない-->
+				<p class="writer">ロバート・ハインライン</p>
+				<p class="price">1300円</p>
+				<div>数量
+					<select class="amount">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+					</select>
+				</div>
+				<span><input type="button" class="buy" value="購入する"></span>
+				<span><input type="button" class="cart" value="カートに入れる"></span>
+			</div>
+			<div class="book">
+				<img src="img/ソラリス.jpg">
+				<h4 class="bookname">ソラリスの陽のもとに</h4>
+				<p class="summery"></p><!--スペースが足りないため実装しない-->
+				<p class="writer">スタニスワフ・レム</p>
+				<p class="price">2000円</p>
+				<div>数量
+					<select class="amount">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+					</select>
+				</div>
+				<span><input type="button" class="buy" value="購入する"></span>
+				<span><input type="button" class="cart" value="カートに入れる"></span>
+			</div>
+			<div class="book">
+				<img src="img/沈黙の春.jfif">
+				<h4 class="bookname">沈黙の春</h4>
+				<p class="summery"></p><!--スペースが足りないため実装しない-->
+				<p class="writer">レイチェル・カーソン</p>
+				<p class="price">1200円</p>
+				<div>数量
+					<select class="amount">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+					</select>
+				</div>
+				<span><input type="button" class="buy" value="購入する"></span>
+				<span><input type="button" class="cart" value="カートに入れる"></span>
+			</div>
+			<div class="book">
+				<img src="img/華氏451度.jpg">
+				<h4 class="bookname">華氏451度</h4>
+				<p class="summery"></p><!--スペースが足りないため実装しない-->
+				<p class="writer">レイ・ブラッドベリ</p>
+				<p class="price">1700円</p>
+				<div>数量
+					<select class="amount">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+					</select>
+				</div>
+				<span><input type="button" class="buy" value="購入する"></span>
+				<span><input type="button" class="cart" value="カートに入れる"></span>
+			</div>
+			<div class="book">
+				<img src="img/銀河ヒッチハイクガイド.jpg">
+				<h4 class="bookname">銀河ヒッチハイクガイド</h4>
+				<p class="summery"></p><!--スペースが足りないため実装しない-->
+				<p class="writer">ダグラス・アダムス</p>
+				<p class="price">600円</p>
+				<div>数量
+					<select class="amount">
+						<option>0</option>
+						<option>1</option>
+						<option>2</option>
+					</select>
+				</div>
+				<span><input type="button" class="buy" value="購入する"></span>
+				<span><input type="button" class="cart" value="カートに入れる"></span>
+			</div>
+		</div>
+		<div class="page">
+			<ol>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li><a href="#">…</a></li>
+			</ol>
+		</div>
+	</section>
+
+	<section id="contact">
+		<h3>お問い合わせ</h3>
+		<form>
+			<div class="form-group">
+				<label for="name">お名前</label><span id="error_name"></span>
+				<input type="text" id="name" name="name">
+			</div>
+			<div class="form-group">
+				<label for="email">メールアドレス</label><span id="error_email"></span>
+				<input type="email" id="email" name="email">
+			</div>
+			<div class="form-group">
+				<label for="message">お問い合わせ内容</label><span id="error_message"></span>
+				<textarea id="message" name="message" rows="5"></textarea>
+			</div>
+			<div class="form-group">
+				<button type="button" class="submit-btn">送信</button>
+			</div>
+		</form>
+	</section>
+	<div class="container">
+	    <!-- モーダルを開くボタン -->
+	    <a class="js-modal-open" href="javascript:void(0);">
+	      <span>🛒 カート (<span class="cart_count">0</span>)</span>
+	    </a>
+	  </div>
+
+	  <!-- モーダル -->
+	  <div class="modal" id="modal">
+	    <div class="modal-content" id="modal-content">
+	      <button class="modal-content__btn-close js-modal-close" type="button">
+	        <img alt="閉じる" src="img/Close.svg">
+	      </button>
+	      <div class="modal-content__body">
+			<div class="modal-content__body">
+			  <div>
+			    <h2>カートの中身</h2>
+			    <ul class="cart_list"></ul>
+			    <p class="cart_total">合計: 0円</p>
+
+			    <div class="modal-buttons">
+			      <button class="clear_cart">カートを空にする</button>
+			      <button class="js-modal-close close_button" type="button">閉じる</button>
+			    </div>
+
+			  </div>
+			</div>
+	      </div>
+	    </div>
+	  </div><!-- カートモーダル本体 -->
+	<div id="cart_modal">
+		<div class="close_cart_modal">×</div>
+
+	</div>
+	<footer>
+		<dl>
+			<dt>電話番号</dt>
+			<dd>000-0000-0000</dd>
+			<dt>メールアドレス</dt>
+			<dd>xxx@xxxxxx.jp</dd>
+		</dl>
+		<h6>(c) Ryoto Takahashi 2025.04</h6>
+	</footer>	
+	<script src="js/cart.js"></script>
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>
